@@ -1,0 +1,19 @@
+[mysql-proxy]
+admin-username = user
+admin-password = pwd
+proxy-backend-addresses = 127.0.0.1:3306
+pwds = user1:+jKsgB3YAG8=, user2:GS+tr4TPgqc=
+daemon = false
+keepalive = true
+event-threads = 8
+log-level = message
+log-path = /var/log/mysql-proxy
+#sql-log = OFF
+#sql-log-slow = 10
+#instance = test
+proxy-address = 0.0.0.0:1234
+admin-address = 0.0.0.0:2345
+#tables = person.mt.id.3
+#charset = utf8
+#client-ips = 127.0.0.1, 192.168.1
+#lvs-ips = 192.168.1.1

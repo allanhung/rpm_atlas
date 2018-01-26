@@ -1,0 +1,2 @@
+# Options for mysql-proxy 
+OPTIONS="--defaults-file=/etc/mysql-proxy/mysql-proxy.cnf --plugin-dir=/usr/lib64/mysql-proxy/plugins"

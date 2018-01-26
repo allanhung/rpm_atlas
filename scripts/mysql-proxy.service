@@ -1,0 +1,14 @@
+[Unit]
+Description=Atlas MySQL Proxy
+
+[Service]
+User=mysql
+Group=mysql
+Type=forking
+EnvironmentFile=-/etc/sysconfig/mysql-proxy
+ExecStart=/usr/bin/mysql-proxy $OPTIONS
+PrivateTmp=true
+LimitNOFILE = 65535
+
+[Install]
+WantedBy=multi-user.target
